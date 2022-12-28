@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start-dev": "node app.js",
+    "start-dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,9 +24,12 @@
   },
   "homepage": "https://github.com/theanupshetty/Dev#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.8.1"
+    "mongoose": "^6.8.1",
+    "nodemon": "^2.0.20",
+    "validator": "^13.7.0"
   }
 }
