@@ -11,7 +11,7 @@ async function createUser(req, res) {
     try {
         const userDTO = req.body;
         const userServiceInstance = new userService(userModel);
-        const createUser = await userServiceInstance.insertUser(userDTO);
+        const createUser = await userServiceInstance.addUser(userDTO);
         return res.send(createUser);
     } catch (err) {
         res.status(500).send(err);
